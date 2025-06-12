@@ -15,6 +15,9 @@ Custom Certificate Authority (CA) allows you to add up to 10 base64-encoded cert
 
 This article shows you how to create custom CAs and apply them to your AKS clusters. 
 
+> [!NOTE]
+> This feature does not add the given certificate to containers. For adding certificates to containers, either add during image build, or at runtime through combination of using kubernetes secret and scripting.
+
 ## Prerequisites
 
 * An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free).
