@@ -19,6 +19,9 @@ This article shows you how to create custom CAs and apply them to your AKS clust
 > [!NOTE]
 > The Custom CA feature adds your custom certificates to the trust store of the AKS node. Certificates added with this feature aren't available to containers running in pods. If you need the certificates inside containers, you need to add them separately by adding them to the image used by your pods or at runtime via scripting and a secret.
 
+> [!NOTE]
+> This feature does not add certificates to containers. If the certificates are also needed inside containers, you still need to add them separately, by either adding to image, or at run time via scripting and secret.
+
 ## Prerequisites
 
 - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
